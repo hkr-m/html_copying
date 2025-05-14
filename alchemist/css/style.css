@@ -144,3 +144,55 @@ header {
   font-size: 1rem;
   gap: 10px;
 }
+
+.arena {
+  overflow-x: auto;
+  margin-top: 20px;
+  border-left: none;
+  border-right: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,.5),
+  0 -4px 6px rgba(0,0,0,.5);
+}
+
+.arena-floors {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+
+.arena-floor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 140px;
+  min-width: 140px;
+}
+
+.arena-title {
+  color: white;
+  background-color: red;
+  width: 100%;
+}
+
+.arena-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.arena-floor p {
+  vertical-align: bottom;
+}
+
+.arena-champ-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
+}
+
+.arena-challenger-name {
+  display: inline-block;
+  max-width: 120px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: bottom;
+}
