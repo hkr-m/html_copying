@@ -1,5 +1,10 @@
 /* Google font Icon */
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+html {
+  font-size: 62.5%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,12 +13,23 @@
 
 a {
   text-decoration: none;
+  color: gray;
+  opacity: .85;
+}
+
+a:hover {
+  opacity: 1;
+  font-weight: bold;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
@@ -25,6 +41,7 @@ ul {
 
 header {
   background-color: #fff;
+  font-size: 1.4rem;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -39,4 +56,65 @@ header {
 .header-title {
   display: flex;
   /* flex-shrink: 0;   ウインドウ幅が狭くなっても要素の幅を固定化させておきた場合に使用する */
+}
+
+.main-header {
+  background-color: #FFCC99;
+  font-size: 1.6rem;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.6rem;
+  align-items: center;
+}
+
+.btn.update {
+  font-size: 1.6rem;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-toggle:after {
+  font-family: "Material Icons";
+  content: "\e5c5";
+  font-size: 2rem;
+  position: absolute;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: -100px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  /* border: 1px solid black; */
+  flex: 1;
+}
+
+.dropdown-menu li {
+  flex: 1;
+}
+
+.dropdown:focus-within .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  padding: 1rem;
 }
