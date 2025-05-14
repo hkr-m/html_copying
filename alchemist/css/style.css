@@ -3,7 +3,11 @@
 @import url(responsive.css);
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%;   /* rootのフォントサイズを10pxに変更 */
+}
+
+body {
+  font-size: 1.6rem;  /* デフォルトのフォントサイズ */
 }
 
 * {
@@ -90,16 +94,11 @@ header {
   color: white;
 }
 
-.dropdown {
-  position: relative;
-}
-
 .dropdown-toggle {
-  display: inline-block;
   position: relative;
 }
 
-.dropdown-toggle:after {
+.main-header .dropdown-icon:after {
   font-family: "Material Icons";
   content: "\e5c5";
   font-size: 2rem;
@@ -115,15 +114,13 @@ header {
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,.1);
-  /* border: 1px solid black; */
-  flex: 1;
 }
 
 .dropdown-menu li {
   flex: 1;
 }
 
-.dropdown:focus-within .dropdown-menu {
+.main-header .dropdown-toggle:focus-within .dropdown-menu {
   display: flex;
   flex-direction: column;
   gap: 10px;
