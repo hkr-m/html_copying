@@ -12,6 +12,7 @@ body {
 
 * {
   box-sizing: border-box;
+  white-space: nowrap;
   margin: 0;
   padding: 0;
 }
@@ -120,6 +121,10 @@ header {
   flex: 1;
 }
 
+.drop-down-menu li a {
+  display: inline-block;
+}
+
 .main-header .dropdown-toggle:focus-within .dropdown-menu {
   display: flex;
   flex-direction: column;
@@ -129,4 +134,14 @@ header {
 
 .btn {
   padding: 1rem;
+}
+
+.geeker-list {
+  padding-top: 20px;
+}
+
+.geeker-list .dropdown-toggle:focus-within .dropdown-menu {
+  display: flex;
+  font-size: 1rem;
+  gap: 10px;
 }
