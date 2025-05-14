@@ -66,6 +66,12 @@ header {
   box-shadow: 0 2px 5px rgba(0,0,0,.1);
 }
 
+.main-header nav {
+  display: flex;
+  gap: 3.6rem;
+  align-items: center;
+}
+
 .nav-list {
   display: flex;
   flex-wrap: wrap;
@@ -74,7 +80,14 @@ header {
 }
 
 .btn.update {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  min-width: 80px;
+  min-height: 50px;
+  max-height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: white;
 }
 
 .dropdown {
@@ -114,6 +127,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 1000;
 }
 
 .btn {
