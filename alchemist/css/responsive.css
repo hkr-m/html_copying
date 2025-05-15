@@ -1,5 +1,22 @@
 @media screen and (max-width: 768px) {
-  .nav-list {
-    /* flex-direction: column; */
+
+  .main-menu {
+    gap: 30px;
+  }
+  
+  .status-card {
+    width: 100%;
+  }
+
+  .status-table th {
+    width: 30%;
+  }
+
+  .status-table td {
+    width: 70%;
+  }
+
+  .action {
+    width: 100%;
   }
 }

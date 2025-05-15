@@ -1,6 +1,5 @@
 /* Google font Icon */
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-@import url(responsive.css);
 
 html {
   font-size: 62.5%;   /* rootのフォントサイズを10pxに変更 */
@@ -15,6 +14,19 @@ body {
   white-space: nowrap;
   margin: 0;
   padding: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
 }
 
 a {
@@ -196,3 +208,117 @@ header {
   overflow: hidden;
   vertical-align: bottom;
 }
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  white-space: normal;
+}
+
+.main-menu h2 {
+  background-color: gray;
+  color: white;
+  font-size: 2rem;
+}
+
+.status-card {
+  width: calc(50% - 10px);
+  max-width: 100%;
+  min-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.user-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.status-card p {
+  white-space: normal;
+}
+
+.status-card h3 {
+  font-size: 1.8rem;
+  color: white;
+  background-color: gray;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.status-row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.status-row dt {
+  width: 15%;
+  background-color: #9e8b9e;
+  color: white;
+  padding-left: 4px;
+}
+
+.status-row dd {
+  width: 35%;
+  background-color: #fff;
+  padding: 4px;
+}
+
+.status-table {
+  text-align: left;
+}
+
+.status-table tbody tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.status-table th {
+  width: 15%;
+  background-color: #9e8b9e;
+  color: white;
+  padding: .4rem;
+}
+
+.status-table td {
+  width: 35%;
+  background-color: #fff;
+  padding: .4rem;
+}
+
+.status-table th,
+.status-table td {
+  white-space: normal;
+}
+
+.equip-rank-s {
+  color: #9932cc;
+}
+
+.equip-rank-a {
+  color: red;
+}
+
+.equip-rank-b {
+  color: #df6c00;
+}
+
+.status-card footer {
+  padding: .4rem;
+  text-align: left;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.action {
+  width: calc(50% - 10px);
+  max-width: 100%;
+  min-width: 300px;
+}
+
