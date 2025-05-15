@@ -322,3 +322,20 @@ header {
   min-width: 300px;
 }
 
+.action-menus {
+  text-align: center;
+}
+
+.action-menus h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 30.5px;
+}
+
+.action-menus h2:before {
+  font-family: "Material Icons";
+  content: "\e5df";
+  font-size: 3rem;
+}
+
