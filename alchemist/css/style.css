@@ -261,14 +261,14 @@ header {
 }
 
 .status-table th {
-  width: 15%;
+  flex: 0 0 15%;
   background-color: #9e8b9e;
   color: white;
   padding: .4rem;
 }
 
 .status-table td {
-  width: 35%;
+  flex: 0 0 35%;
   background-color: #fff;
   padding: .4rem;
 }

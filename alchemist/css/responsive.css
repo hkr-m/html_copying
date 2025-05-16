@@ -9,11 +9,11 @@
   }
 
   .status-table th {
-    width: 30%;
+    flex: 0 0 30%;
   }
 
   .status-table td {
-    width: 70%;
+    flex: 0 0 70%;
   }
 
   .action {
