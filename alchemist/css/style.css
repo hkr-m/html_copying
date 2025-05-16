@@ -251,25 +251,6 @@ header {
   overflow-wrap: break-word;
 }
 
-.status-row {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: left;
-}
-
-.status-row dt {
-  width: 15%;
-  background-color: #9e8b9e;
-  color: white;
-  padding-left: 4px;
-}
-
-.status-row dd {
-  width: 35%;
-  background-color: #fff;
-  padding: 4px;
-}
-
 .status-table {
   text-align: left;
 }
