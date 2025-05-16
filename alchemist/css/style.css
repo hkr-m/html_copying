@@ -298,6 +298,8 @@ header {
 }
 
 .action {
+  display: flex;
+  flex-direction: column;
   width: calc(50% - 10px);
   max-width: 100%;
   min-width: 300px;
@@ -320,3 +322,61 @@ header {
   font-size: 3rem;
 }
 
+.action-table {
+  text-align: center;
+  width: 100%;
+}
+
+.action-table tr {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 36px;
+}
+
+.action-table th {
+  flex: 0 0 20%;
+  background-color: #9e8b9e;
+  color: white;
+}
+
+.action-table td {
+  flex: 0 0 30%;
+  background-color: #fff;
+}
+
+.action-table td a {
+  display: inline-block;
+}
+
+.action-table th,
+.action-table td,
+.action-table td a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: normal;
+}
+
+.action-btn {
+  border: 1px solid;
+  padding: .4rem;
+  opacity: .85;
+  cursor: pointer;
+  height: 2.4rem;
+}
+
+.action-btn:active {
+  opacity: .8;
+}
+
+.nortification-panel {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nortification-panel img {
+  width: 100px;
+  height: 100px;
+}
