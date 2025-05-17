@@ -370,13 +370,23 @@ header {
 }
 
 .nortification-panel {
+  background-color: #f8f8ff;
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
   align-items: center;
-  gap: 1rem;
 }
 
-.nortification-panel img {
-  width: 100px;
-  height: 100px;
+.nortification-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nortification-icon img {
+  width: 80px;
+  height: 80%;
+}
+
+.nortification-panel p {
+  white-space: normal;
 }
