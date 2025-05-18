@@ -351,47 +351,43 @@ header {
   font-size: 3rem;
 }
 
-.action-table {
-  text-align: center;
-  width: 100%;
+.action-menu-grid-4 {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 20% 30% 20% 30%;
+  border-top: .1px solid;
+  border-left: .1px solid;
+  border-bottom: .1px solid;
 }
 
-.action-table tr {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 36px;
+.action-menu-grid-4 p,
+.action-menu-grid-4 a {
+  white-space: normal;
 }
 
-.action-table th {
-  flex: 0 0 20%;
+.action-menu-item {
+  border-right: .1px solid;
+  border-bottom: .1px solid;
+}
+
+.action-menu-label {
   background-color: #9e8b9e;
   color: white;
 }
 
-.action-table td {
-  flex: 0 0 30%;
-  background-color: #fff;
-}
-
-.action-table td a {
-  display: inline-block;
-}
-
-.action-table th,
-.action-table td,
-.action-table td a {
+.action-menu-item,
+.action-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  white-space: normal;
+  padding: .5rem;
 }
 
 .action-btn {
   border: 1px solid;
-  padding: .4rem;
   opacity: .85;
   cursor: pointer;
-  height: 2.4rem;
+  padding: .5rem;
 }
 
 .action-btn:active {
