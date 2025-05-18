@@ -460,3 +460,23 @@ header {
 .battle-menu-item button {
   white-space: normal;
 }
+
+footer {
+  padding-top: 2rem;
+  background-color: f8f9fa;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer p {
+  opacity: .5;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
